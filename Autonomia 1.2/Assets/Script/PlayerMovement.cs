@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    float speed, sensiX =3f, sensiY=3f;//sensibilite de rotation
+    float speed=7, sensiX =3f, sensiY=3f;//sensibilite de rotation
 
     PlayerMotor motor;
 
@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         motor = GetComponent<PlayerMotor>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
